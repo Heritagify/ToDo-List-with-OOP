@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: rgb(142, 88, 50);
+}
+#container{
+    /* border: 2px solid red; */
+    box-shadow: 2px 3px 25px red;
+    width: 68%;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+#container .show{
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    box-shadow: #120101;
+}
+form{
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+form input{
+    flex: 1;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+.btn{
+    width: 100px;
+    background-color: rgb(95, 44, 8);
+    color: #fff;
+    padding: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: none;
+}
+.btn:hover{
+    background: #120101;
+    transition: 0.5s ease-in-out;
+}
+#todo{
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*gap: 108px;
+    */background:  #120101;
+    color: white;
+    margin: 1rem;
+    /*width: 92%;
+    */font-size: 21px;
+    padding: .9rem 1rem .9rem 1.5rem;
+}
+.pora{
+    display: flex;
+    gap: 22px;
+}
+#todo span{
+    color: white;
+    font-size: large;
+}
+
+
+
+
+
+@media screen and (max-width: 475px){
+    #container{
+        width: 370px;
+        box-shadow: 2px 1px 15px red;
+        padding: 1rem;
+    }
+    form input{
+        font-size: 20px;
+        flex: .1;
+    }
+    .pora{
+        gap: 17;
+    }
+
+}
